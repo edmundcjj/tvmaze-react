@@ -34,13 +34,19 @@ class Result_List extends React.Component {
 
     this.state = {
       query: "",
+      sorting_criteria: "",
       movie_list: [],
-      queried_movie_list: []
+      queried_movie_list: [],
+      sorted_movie_list: []
     }
 
     this.populate_movie_list = this.populate_movie_list.bind( this );
     this.search = this.search.bind( this );
     this.set_query = this.set_query.bind( this );
+    this.sort = this.sort.bind( this );
+    this.set_sort_parameter = this.set_sort_parameter.bind( this );
+    this.sort_by_titles = this.sort_by_titles.bind( this );
+    this.sort_by_ratings = this.sort_by_ratings.bind( this );
   }
 
   // Save all the movies retrieved from the json file into an array
@@ -54,6 +60,11 @@ class Result_List extends React.Component {
   // Save the query
   set_query(event){
     this.setState({query: event.target.value});
+  }
+
+  // Save the sorting criteria
+  set_sort_parameter(event){
+    this.setState({sorting_criteria: event.target.value});
   }
 
   // Function to retrieve the related movie titles based on the query
@@ -73,8 +84,41 @@ class Result_List extends React.Component {
     this.setState({queried_movie_list: this.state.queried_movie_list});
   }
 
+  // Function sort based on certain criteria
+  sort(){
+    if (this.state.sorting_criteria === 'rating') {
+      this.sort_by_ratings(this.state.queried_movie_list);
+    }
+    else if (this.state.sorting_criteria === 'title') {
+      this.sort_by_titles(this.state.queried_movie_list);
+    }
+  }
+
+  sort_by_ratings(movieList){
+    movieList.sort(function(a, b){
+      return a.show.rating.average - b.show.rating.average
+    })
+
+    this.setState({queried_movie_list: movieList});
+  }
+
+  sort_by_titles(movieList){
+    movieList.sort(function(a, b){
+      var nameA=a.show.name.toLowerCase(), nameB=b.show.name.toLowerCase()
+
+      if (nameA < nameB) //sort string ascending
+          return -1
+      if (nameA > nameB)
+          return 1
+      return 0 //default return value (no sorting)
+    })
+
+    this.setState({queried_movie_list: movieList});
+  }
+
   render() {
-    console.log("Movie List =>", this.state.queried_movie_list);
+    console.log("Sorting Criteria => ", this.state.sorting_criteria);
+    console.log("Movie List => ", this.state.queried_movie_list);
     const ResultNode = this.state.queried_movie_list.map( (result) => {
                           return <Result_item key={result.show.id}
                                               name={result.show.name}
@@ -90,6 +134,14 @@ class Result_List extends React.Component {
         <div className={styles.center_form}>
           <input type="text" placeholder="Search..." onChange={this.set_query} value={this.state.query}/>
           <button onClick={this.search}>Search</button>
+
+          <br></br><br></br>
+
+          <select onChange={this.set_sort_parameter} value={this.state.sorting_criteria}>
+            <option value="rating">Ratings</option>
+            <option value="title">Titles</option>
+          </select>
+          <button onClick={this.sort}>Sort</button>
         </div>
 
         <br></br>
