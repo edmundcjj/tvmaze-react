@@ -29,32 +29,23 @@ class Result_item extends React.Component {
 
 // List of results after querying
 class Result_List extends React.Component {
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
 
     this.state = {
       query: "",
       sorting_criteria: "",
-      movie_list: [],
+      movie_list: this.props.results.results,
       queried_movie_list: [],
       sorted_movie_list: []
     }
 
-    this.populate_movie_list = this.populate_movie_list.bind( this );
     this.search = this.search.bind( this );
     this.set_query = this.set_query.bind( this );
     this.sort = this.sort.bind( this );
     this.set_sort_parameter = this.set_sort_parameter.bind( this );
     this.sort_by_titles = this.sort_by_titles.bind( this );
     this.sort_by_ratings = this.sort_by_ratings.bind( this );
-  }
-
-  // Save all the movies retrieved from the json file into an array
-  populate_movie_list(){
-    this.props.results.results.map( (result) => {
-      this.state.movie_list.push(result);
-    });
-    this.setState({movie_list: this.state.movie_list});
   }
 
   // Save the query
@@ -69,19 +60,18 @@ class Result_List extends React.Component {
 
   // Function to retrieve the related movie titles based on the query
   search(){
-    this.populate_movie_list();
-
     let current_query = this.state.query;
     let movies_array = this.state.movie_list;
+    let temp_queried_movie_list = [];
 
     this.setState({query: ""});
 
     for (var i = 0; i < movies_array.length; i++) {
       if (movies_array[i].show.name.indexOf(current_query) != -1) {
-        this.state.queried_movie_list.push(movies_array[i]);
+        temp_queried_movie_list.push(movies_array[i]);
       }
     }
-    this.setState({queried_movie_list: this.state.queried_movie_list});
+    this.setState({queried_movie_list: temp_queried_movie_list});
   }
 
   // Function sort based on certain criteria
@@ -94,7 +84,9 @@ class Result_List extends React.Component {
     }
   }
 
+  // Sort movie titles based on ratings
   sort_by_ratings(movieList){
+    this.setState({queried_movie_list: []});
     movieList.sort(function(a, b){
       return a.show.rating.average - b.show.rating.average
     })
@@ -102,6 +94,7 @@ class Result_List extends React.Component {
     this.setState({queried_movie_list: movieList});
   }
 
+  // Sort movie titles based on movie titles
   sort_by_titles(movieList){
     movieList.sort(function(a, b){
       var nameA=a.show.name.toLowerCase(), nameB=b.show.name.toLowerCase()
@@ -116,9 +109,38 @@ class Result_List extends React.Component {
     this.setState({queried_movie_list: movieList});
   }
 
+  // Lifecycle Methods
+  componentDidMount() {
+    console.log( "component did mount");
+  }
+
+  static getDerivedStateFromProps( nextProps, prevState ){
+    console.log( "get derived state from props");
+    return null;
+  }
+
+  shouldComponentUpdate( nextProps, nextState ) {
+    console.log( "component should update");
+    return true;
+
+  }
+
+  getSnapshotBeforeUpdate( prevProps, prevState ){
+    console.log("get snapshot before update");
+    return null;
+  }
+
+  componentDidUpdate( prevProps, prevState, snapshot ) {
+    console.log( "component did update");
+  }
+
+  componentWillUnmount() {
+    console.log( "component will unmount");
+  }
+
+  // Display content onto the Result_List meta tag
   render() {
-    console.log("Sorting Criteria => ", this.state.sorting_criteria);
-    console.log("Movie List => ", this.state.queried_movie_list);
+    console.log("Queried Movie List after querying => ", this.state.queried_movie_list);
     const ResultNode = this.state.queried_movie_list.map( (result) => {
                           return <Result_item key={result.show.id}
                                               name={result.show.name}
