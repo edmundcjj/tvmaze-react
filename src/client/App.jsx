@@ -7,6 +7,10 @@ import Home from './components/home/main';
 
 const RESULTS = require('../../results.js');
 
+import {queryTVMazeAPI} from './utils';
+
+let movie_data = [];
+
 // Each Individual Result
 class Result_item extends React.Component {
   constructor(){
@@ -35,14 +39,13 @@ class Result_List extends React.Component {
     this.state = {
       query: "",
       sorting_criteria: "",
-      movie_list: this.props.results.results,
       queried_movie_list: [],
       sorted_movie_list: []
     }
 
-    this.search = this.search.bind( this );
     this.set_query = this.set_query.bind( this );
     this.sort = this.sort.bind( this );
+    this.search = this.search.bind( this );
     this.set_sort_parameter = this.set_sort_parameter.bind( this );
     this.sort_by_titles = this.sort_by_titles.bind( this );
     this.sort_by_ratings = this.sort_by_ratings.bind( this );
@@ -61,17 +64,10 @@ class Result_List extends React.Component {
   // Function to retrieve the related movie titles based on the query
   search(){
     let current_query = this.state.query;
-    let movies_array = this.state.movie_list;
-    let temp_queried_movie_list = [];
 
-    this.setState({query: ""});
-
-    for (var i = 0; i < movies_array.length; i++) {
-      if (movies_array[i].show.name.indexOf(current_query) != -1) {
-        temp_queried_movie_list.push(movies_array[i]);
-      }
-    }
-    this.setState({queried_movie_list: temp_queried_movie_list});
+    queryTVMazeAPI(current_query, (result) => {
+      this.setState({queried_movie_list: result});
+    });
   }
 
   // Function sort based on certain criteria
@@ -122,7 +118,6 @@ class Result_List extends React.Component {
   shouldComponentUpdate( nextProps, nextState ) {
     console.log( "component should update");
     return true;
-
   }
 
   getSnapshotBeforeUpdate( prevProps, prevState ){
@@ -141,7 +136,10 @@ class Result_List extends React.Component {
   // Display content onto the Result_List meta tag
   render() {
     console.log("Queried Movie List after querying => ", this.state.queried_movie_list);
-    const ResultNode = this.state.queried_movie_list.map( (result) => {
+    let ResultNode =
+      this.state.queried_movie_list.length === 0
+        ? null
+        : this.state.queried_movie_list.map( (result) => {
                           return <Result_item key={result.show.id}
                                               name={result.show.name}
                                               rating={result.show.rating.average}
@@ -178,7 +176,7 @@ const App = () => (
   <div>
     <Home />
 
-    <Result_List results={RESULTS} />
+    <Result_List />
   </div>
 );
 
