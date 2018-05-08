@@ -5,8 +5,6 @@ import styles from 'style.scss';
 
 import Home from './components/home/main';
 
-const RESULTS = require('../../results.js');
-
 import {queryTVMazeAPI} from './utils';
 
 let movie_data = [];

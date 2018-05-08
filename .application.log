@@ -22452,3 +22452,362 @@ Child [1mhtml-webpack-plugin for "index.html"[39m[22m:
 2018-05-08T06:54:02.836Z - info: ::1 - GET /vendor.js - 304 - 0.024s
 2018-05-08T06:54:02.840Z - info: ::1 - GET /main.js - 200 - 0.004s
 2018-05-08T06:54:05.362Z - info: ::1 - GET /favicon.ico - 200 - 0.008s
+2018-05-08T17:41:35.355Z - info: Application logs file: C:\Users\Edmundcjj\Desktop\tvmaze-react\.application.log
+2018-05-08T17:41:36.843Z - info: Application env: development
+2018-05-08T17:41:36.898Z - info: HTTP server is now running on http://localhost:3000
+2018-05-08T17:41:43.820Z - error: Hash: [1mbced265ee280ba020a34[39m[22m
+Version: webpack [1m4.1.1[39m[22m
+Time: [1m6798[39m[22mms
+Built at: 2018-5-9 [1m01:41:43[39m[22m
+     [1mAsset[39m[22m       [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m       [1mChunk Names[39m[22m
+   [1m[32mmain.js[39m[22m   82.8 KiB    [1mmain[39m[22m  [1m[32m[emitted][39m[22m         main
+ [1m[33mvendor.js[39m[22m   [1m[33m3.94 MiB[39m[22m  [1mvendor[39m[22m  [1m[32m[emitted][39m[22m  [1m[33m[big][39m[22m  vendor
+[1m[32mindex.html[39m[22m  657 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m = [1m[32mvendor.js[39m[22m [1m[32mmain.js[39m[22m
+[./node_modules/airbnb-browser-shims/index.js] 103 bytes {[1m[33mvendor[39m[22m}[1m[32m [built][39m[22m
+[./node_modules/babel-polyfill/lib/index.js] 833 bytes {[1m[33mvendor[39m[22m}[1m[32m [built][39m[22m
+[./node_modules/querystring-es3/index.js] 127 bytes {[1m[33mvendor[39m[22m}[1m[32m [built][39m[22m
+[./src/client/App.jsx] 9.67 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+   [0] [1mmulti ./src/client/index.jsx webpack-hot-middleware/client?http://localhost:3000&reload=true&overlay=false[39m[22m 40 bytes {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[./node_modules/react-dom/index.js] 1.33 KiB {[1m[33mvendor[39m[22m}[1m[32m [built][39m[22m
+[./node_modules/react/index.js] 190 bytes {[1m[33mvendor[39m[22m}[1m[32m [built][39m[22m
+[./node_modules/sanitize.css/sanitize.css] 1.29 KiB {[1m[33mvendor[39m[22m}[1m[32m [built][39m[22m
+[./node_modules/strip-ansi/index.js] 161 bytes {[1m[33mvendor[39m[22m}[1m[32m [built][39m[22m
+[./node_modules/webpack-hot-middleware/client-overlay.js] [1m(webpack)-hot-middleware/client-overlay.js[39m[22m 2.16 KiB {[1m[33mvendor[39m[22m}[1m[32m [built][39m[22m
+[./node_modules/webpack-hot-middleware/client.js?http://localhost:3000&reload=true&overlay=false] [1m(webpack)-hot-middleware/client.js?http://localhost:3000&reload=true&overlay=false[39m[22m 7.18 KiB {[1m[33mvendor[39m[22m}[1m[32m [built][39m[22m
+[./node_modules/webpack-hot-middleware/process-update.js] [1m(webpack)-hot-middleware/process-update.js[39m[22m 4.23 KiB {[1m[33mvendor[39m[22m}[1m[32m [built][39m[22m
+[./node_modules/webpack/buildin/module.js] [1m(webpack)/buildin/module.js[39m[22m 519 bytes {[1m[33mvendor[39m[22m}[1m[32m [built][39m[22m
+[./src/client/index.jsx] 303 bytes {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m[1m[31m [1 error][39m[22m
+[./src/client/style.scss] 1.44 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+    + 457 hidden modules
+
+[1m[31mERROR in ./results.js
+
+C:\Users\Edmundcjj\Desktop\tvmaze-react\results.js
+  580:4  error  Parsing error: Unexpected token
+
+  578 |         "previousepisode": {
+  579 |           "href": "http://api.tvmaze.com/episodes/437708"
+> 580 | =======
+      |    ^
+  581 | var results = [  
+  582 |     {  
+  583 |         "score":16.974672,
+
+✖ 1 problem (1 error, 0 warnings)
+
+ @ ./src/client/App.jsx 8:14-41
+ @ ./src/client/index.jsx
+ @ multi ./src/client/index.jsx webpack-hot-middleware/client?http://localhost:3000&reload=true&overlay=false[39m[22m
+
+[1m[31mERROR in ./src/client/components/home/main.jsx
+
+C:\Users\Edmundcjj\Desktop\tvmaze-react\src\client\components\home\main.jsx
+   1:27  error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+   2:35  error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+   3:1   error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+   4:23  error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+   5:8   error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+   6:34  error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+   7:28  error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+   8:11  error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+   9:9   error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+  10:3   error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+  11:1   error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+  12:23  error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+
+✖ 12 problems (12 errors, 0 warnings)
+  12 errors, 0 warnings potentially fixable with the `--fix` option.
+
+ @ ./src/client/App.jsx 6:0-42 177:26-30
+ @ ./src/client/index.jsx
+ @ multi ./src/client/index.jsx webpack-hot-middleware/client?http://localhost:3000&reload=true&overlay=false[39m[22m
+
+[1m[31mERROR in ./src/client/index.jsx
+
+C:\Users\Edmundcjj\Desktop\tvmaze-react\src\client\index.jsx
+   1:25  error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+   2:31  error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+   3:1   error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+   4:36  error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+   5:1   error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+   6:27  error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+   7:34  error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+   8:1   error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+   9:25  error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+  10:1   error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+  11:17  error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+  12:23  error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+  13:1   error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+  14:58  error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+
+✖ 14 problems (14 errors, 0 warnings)
+  14 errors, 0 warnings potentially fixable with the `--fix` option.
+
+ @ multi ./src/client/index.jsx webpack-hot-middleware/client?http://localhost:3000&reload=true&overlay=false[39m[22m
+
+[1m[31mERROR in ./results.js
+Module build failed: SyntaxError: C:/Users/Edmundcjj/Desktop/tvmaze-react/results.js: Unexpected token (580:3)
+
+  578 |         "previousepisode": {
+  579 |           "href": "http://api.tvmaze.com/episodes/437708"
+> 580 | =======
+      |    ^
+  581 | var results = [  
+  582 |     {  
+  583 |         "score":16.974672,
+
+ @ ./src/client/App.jsx 8:14-41
+ @ ./src/client/index.jsx
+ @ multi ./src/client/index.jsx webpack-hot-middleware/client?http://localhost:3000&reload=true&overlay=false[39m[22m
+Child [1mhtml-webpack-plugin for "index.html"[39m[22m:
+         [1mAsset[39m[22m    [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m[1m[39m[22m[1mChunk Names[39m[22m
+    [1m[32mindex.html[39m[22m  28 KiB       [1m0[39m[22m  [1m[32m[39m[22m
+    Entrypoint [1mundefined[39m[22m = [1m[32mindex.html[39m[22m
+    [./node_modules/html-webpack-plugin/lib/loader.js!./src/client/index.html] 619 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+2018-05-08T17:41:43.820Z - info: Failed to compile.
+2018-05-08T17:41:43.975Z - info: ::1 - GET / - 200 - 0.006s
+2018-05-08T17:41:44.076Z - info: ::1 - GET /vendor.js - 200 - 0.041s
+2018-05-08T17:41:44.086Z - info: ::1 - GET /main.js - 200 - 0.002s
+2018-05-08T17:42:19.822Z - info: Compiling...
+2018-05-08T17:42:20.332Z - error: Hash: [1me520654797d4d7e2eae2[39m[22m
+Version: webpack [1m4.1.1[39m[22m
+Time: [1m259[39m[22mms
+Built at: 2018-5-9 [1m01:42:20[39m[22m
+                 [1mAsset[39m[22m       [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m       [1mChunk Names[39m[22m
+[1m[32mhot-update.c4ed79.json[39m[22m   44 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+               [1m[32mmain.js[39m[22m   82.9 KiB    [1mmain[39m[22m  [1m[32m[emitted][39m[22m         main
+             [1m[33mvendor.js[39m[22m   [1m[33m3.94 MiB[39m[22m  [1mvendor[39m[22m  [1m[32m[39m[22m           [1m[33m[big][39m[22m  vendor
+  [1m[32mhot-update.bced26.js[39m[22m   3.57 KiB    [1mmain[39m[22m  [1m[32m[emitted][39m[22m         main
+[1m[32mhot-update.bced26.json[39m[22m   46 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+            [1m[32mindex.html[39m[22m  657 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m = [1m[32mvendor.js[39m[22m [1m[32mmain.js[39m[22m [1m[32mhot-update.bced26.js[39m[22m
+[./node_modules/airbnb-browser-shims/index.js] 103 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/babel-polyfill/lib/index.js] 833 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/querystring-es3/index.js] 127 bytes {[1m[33mvendor[39m[22m}
+[./src/client/App.jsx] 9.67 KiB {[1m[33mmain[39m[22m}
+   [0] [1mmulti ./src/client/index.jsx webpack-hot-middleware/client?http://localhost:3000&reload=true&overlay=false[39m[22m 40 bytes {[1m[33mmain[39m[22m}
+[./node_modules/react-dom/index.js] 1.33 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/react/index.js] 190 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/sanitize.css/sanitize.css] 1.29 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/strip-ansi/index.js] 161 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/webpack-hot-middleware/client-overlay.js] [1m(webpack)-hot-middleware/client-overlay.js[39m[22m 2.16 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/webpack-hot-middleware/client.js?http://localhost:3000&reload=true&overlay=false] [1m(webpack)-hot-middleware/client.js?http://localhost:3000&reload=true&overlay=false[39m[22m 7.18 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/webpack-hot-middleware/process-update.js] [1m(webpack)-hot-middleware/process-update.js[39m[22m 4.23 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/webpack/buildin/module.js] [1m(webpack)/buildin/module.js[39m[22m 519 bytes {[1m[33mvendor[39m[22m}
+[./src/client/index.jsx] 323 bytes {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[./src/client/style.scss] 1.44 KiB {[1m[33mmain[39m[22m}
+    + 457 hidden modules
+
+[1m[31mERROR in ./results.js
+
+C:\Users\Edmundcjj\Desktop\tvmaze-react\results.js
+  580:4  error  Parsing error: Unexpected token
+
+  578 |         "previousepisode": {
+  579 |           "href": "http://api.tvmaze.com/episodes/437708"
+> 580 | =======
+      |    ^
+  581 | var results = [  
+  582 |     {  
+  583 |         "score":16.974672,
+
+✖ 1 problem (1 error, 0 warnings)
+
+ @ ./src/client/App.jsx 8:14-41
+ @ ./src/client/index.jsx
+ @ multi ./src/client/index.jsx webpack-hot-middleware/client?http://localhost:3000&reload=true&overlay=false[39m[22m
+
+[1m[31mERROR in ./src/client/components/home/main.jsx
+
+C:\Users\Edmundcjj\Desktop\tvmaze-react\src\client\components\home\main.jsx
+   1:27  error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+   2:35  error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+   3:1   error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+   4:23  error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+   5:8   error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+   6:34  error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+   7:28  error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+   8:11  error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+   9:9   error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+  10:3   error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+  11:1   error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+  12:23  error  Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+
+✖ 12 problems (12 errors, 0 warnings)
+  12 errors, 0 warnings potentially fixable with the `--fix` option.
+
+ @ ./src/client/App.jsx 6:0-42 177:26-30
+ @ ./src/client/index.jsx
+ @ multi ./src/client/index.jsx webpack-hot-middleware/client?http://localhost:3000&reload=true&overlay=false[39m[22m
+
+[1m[31mERROR in ./results.js
+Module build failed: SyntaxError: C:/Users/Edmundcjj/Desktop/tvmaze-react/results.js: Unexpected token (580:3)
+
+  578 |         "previousepisode": {
+  579 |           "href": "http://api.tvmaze.com/episodes/437708"
+> 580 | =======
+      |    ^
+  581 | var results = [  
+  582 |     {  
+  583 |         "score":16.974672,
+
+ @ ./src/client/App.jsx 8:14-41
+ @ ./src/client/index.jsx
+ @ multi ./src/client/index.jsx webpack-hot-middleware/client?http://localhost:3000&reload=true&overlay=false[39m[22m
+Child [1mhtml-webpack-plugin for "index.html"[39m[22m:
+                     [1mAsset[39m[22m      [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m[1mChunk Names[39m[22m
+                [1m[32mindex.html[39m[22m    28 KiB       [1m1[39m[22m  [1m[32m[39m[22m           
+    [1m[32mhot-update.c4ed79.json[39m[22m  44 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m  
+    Entrypoint [1mundefined[39m[22m = [1m[32mindex.html[39m[22m
+    [./node_modules/html-webpack-plugin/lib/loader.js!./src/client/index.html] 619 bytes {[1m[33m1[39m[22m}
+2018-05-08T17:42:20.332Z - info: Failed to compile.
+2018-05-08T17:42:23.248Z - info: ::1 - GET / - 304 - 0.002s
+2018-05-08T17:42:23.343Z - info: ::1 - GET /vendor.js - 304 - 0.013s
+2018-05-08T17:42:23.345Z - info: ::1 - GET /main.js - 200 - 0.001s
+2018-05-08T17:42:56.427Z - info: Compiling...
+2018-05-08T17:42:56.996Z - error: Hash: [1m792b03047b2b5ff359cb[39m[22m
+Version: webpack [1m4.1.1[39m[22m
+Time: [1m319[39m[22mms
+Built at: 2018-5-9 [1m01:42:56[39m[22m
+                 [1mAsset[39m[22m       [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m       [1mChunk Names[39m[22m
+[1m[32mhot-update.c64a9f.json[39m[22m   44 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+               [1m[32mmain.js[39m[22m   82.9 KiB    [1mmain[39m[22m  [1m[32m[emitted][39m[22m         main
+             [1m[33mvendor.js[39m[22m   [1m[33m3.94 MiB[39m[22m  [1mvendor[39m[22m  [1m[32m[39m[22m           [1m[33m[big][39m[22m  vendor
+  [1m[32mhot-update.e52065.js[39m[22m   3.27 KiB    [1mmain[39m[22m  [1m[32m[emitted][39m[22m         main
+[1m[32mhot-update.e52065.json[39m[22m   46 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+            [1m[32mindex.html[39m[22m  657 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m = [1m[32mvendor.js[39m[22m [1m[32mmain.js[39m[22m [1m[32mhot-update.e52065.js[39m[22m
+[./node_modules/airbnb-browser-shims/index.js] 103 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/babel-polyfill/lib/index.js] 833 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/querystring-es3/index.js] 127 bytes {[1m[33mvendor[39m[22m}
+[./src/client/App.jsx] 9.67 KiB {[1m[33mmain[39m[22m}
+   [0] [1mmulti ./src/client/index.jsx webpack-hot-middleware/client?http://localhost:3000&reload=true&overlay=false[39m[22m 40 bytes {[1m[33mmain[39m[22m}
+[./node_modules/react-dom/index.js] 1.33 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/react/index.js] 190 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/sanitize.css/sanitize.css] 1.29 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/strip-ansi/index.js] 161 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/webpack-hot-middleware/client-overlay.js] [1m(webpack)-hot-middleware/client-overlay.js[39m[22m 2.16 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/webpack-hot-middleware/client.js?http://localhost:3000&reload=true&overlay=false] [1m(webpack)-hot-middleware/client.js?http://localhost:3000&reload=true&overlay=false[39m[22m 7.18 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/webpack-hot-middleware/process-update.js] [1m(webpack)-hot-middleware/process-update.js[39m[22m 4.23 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/webpack/buildin/module.js] [1m(webpack)/buildin/module.js[39m[22m 519 bytes {[1m[33mvendor[39m[22m}
+[./src/client/index.jsx] 323 bytes {[1m[33mmain[39m[22m}
+[./src/client/style.scss] 1.44 KiB {[1m[33mmain[39m[22m}
+    + 457 hidden modules
+
+[1m[31mERROR in ./results.js
+
+C:\Users\Edmundcjj\Desktop\tvmaze-react\results.js
+  580:4  error  Parsing error: Unexpected token
+
+  578 |         "previousepisode": {
+  579 |           "href": "http://api.tvmaze.com/episodes/437708"
+> 580 | =======
+      |    ^
+  581 | var results = [  
+  582 |     {  
+  583 |         "score":16.974672,
+
+✖ 1 problem (1 error, 0 warnings)
+
+ @ ./src/client/App.jsx 8:14-41
+ @ ./src/client/index.jsx
+ @ multi ./src/client/index.jsx webpack-hot-middleware/client?http://localhost:3000&reload=true&overlay=false[39m[22m
+
+[1m[31mERROR in ./results.js
+Module build failed: SyntaxError: C:/Users/Edmundcjj/Desktop/tvmaze-react/results.js: Unexpected token (580:3)
+
+  578 |         "previousepisode": {
+  579 |           "href": "http://api.tvmaze.com/episodes/437708"
+> 580 | =======
+      |    ^
+  581 | var results = [  
+  582 |     {  
+  583 |         "score":16.974672,
+
+ @ ./src/client/App.jsx 8:14-41
+ @ ./src/client/index.jsx
+ @ multi ./src/client/index.jsx webpack-hot-middleware/client?http://localhost:3000&reload=true&overlay=false[39m[22m
+Child [1mhtml-webpack-plugin for "index.html"[39m[22m:
+                     [1mAsset[39m[22m      [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m[1mChunk Names[39m[22m
+                [1m[32mindex.html[39m[22m    28 KiB       [1m0[39m[22m  [1m[32m[39m[22m           
+    [1m[32mhot-update.c64a9f.json[39m[22m  44 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m  
+    Entrypoint [1mundefined[39m[22m = [1m[32mindex.html[39m[22m
+    [./node_modules/html-webpack-plugin/lib/loader.js!./src/client/index.html] 619 bytes {[1m[33m0[39m[22m}
+2018-05-08T17:42:56.996Z - info: Failed to compile.
+2018-05-08T17:43:23.358Z - info: Compiling...
+2018-05-08T17:43:24.181Z - info: Hash: [1mf461584898db1229ed72[39m[22m
+Version: webpack [1m4.1.1[39m[22m
+Time: [1m555[39m[22mms
+Built at: 2018-5-9 [1m01:43:24[39m[22m
+                 [1mAsset[39m[22m       [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m       [1mChunk Names[39m[22m
+[1m[32mhot-update.6bb5ae.json[39m[22m   44 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+               [1m[32mmain.js[39m[22m     82 KiB    [1mmain[39m[22m  [1m[32m[emitted][39m[22m         main
+             [1m[33mvendor.js[39m[22m   [1m[33m3.94 MiB[39m[22m  [1mvendor[39m[22m  [1m[32m[39m[22m           [1m[33m[big][39m[22m  vendor
+  [1m[32mhot-update.792b03.js[39m[22m     21 KiB    [1mmain[39m[22m  [1m[32m[emitted][39m[22m         main
+[1m[32mhot-update.792b03.json[39m[22m   46 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+            [1m[32mindex.html[39m[22m  657 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m = [1m[32mvendor.js[39m[22m [1m[32mmain.js[39m[22m [1m[32mhot-update.792b03.js[39m[22m
+[./node_modules/airbnb-browser-shims/index.js] 103 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/babel-polyfill/lib/index.js] 833 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/querystring-es3/index.js] 127 bytes {[1m[33mvendor[39m[22m}
+[./src/client/App.jsx] 9.62 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+   [0] [1mmulti ./src/client/index.jsx webpack-hot-middleware/client?http://localhost:3000&reload=true&overlay=false[39m[22m 40 bytes {[1m[33mmain[39m[22m}
+[./node_modules/react-dom/index.js] 1.33 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/react/index.js] 190 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/sanitize.css/sanitize.css] 1.29 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/strip-ansi/index.js] 161 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/webpack-hot-middleware/client-overlay.js] [1m(webpack)-hot-middleware/client-overlay.js[39m[22m 2.16 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/webpack-hot-middleware/client.js?http://localhost:3000&reload=true&overlay=false] [1m(webpack)-hot-middleware/client.js?http://localhost:3000&reload=true&overlay=false[39m[22m 7.18 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/webpack-hot-middleware/process-update.js] [1m(webpack)-hot-middleware/process-update.js[39m[22m 4.23 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/webpack/buildin/module.js] [1m(webpack)/buildin/module.js[39m[22m 519 bytes {[1m[33mvendor[39m[22m}
+[./src/client/index.jsx] 323 bytes {[1m[33mmain[39m[22m}
+[./src/client/style.scss] 1.44 KiB {[1m[33mmain[39m[22m}
+    + 456 hidden modules
+Child [1mhtml-webpack-plugin for "index.html"[39m[22m:
+                     [1mAsset[39m[22m      [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m[1mChunk Names[39m[22m
+                [1m[32mindex.html[39m[22m    28 KiB       [1m1[39m[22m  [1m[32m[39m[22m           
+    [1m[32mhot-update.6bb5ae.json[39m[22m  44 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m  
+    Entrypoint [1mundefined[39m[22m = [1m[32mindex.html[39m[22m
+    [./node_modules/html-webpack-plugin/lib/loader.js!./src/client/index.html] 619 bytes {[1m[33m1[39m[22m}
+2018-05-08T17:43:24.181Z - info: Compiled successfully.
+2018-05-08T17:43:29.001Z - info: ::1 - GET / - 304 - 0.001s
+2018-05-08T17:43:29.103Z - info: ::1 - GET /vendor.js - 304 - 0.013s
+2018-05-08T17:43:29.105Z - info: ::1 - GET /main.js - 200 - 0.001s
+2018-05-08T17:43:30.308Z - info: ::1 - GET /favicon.ico - 200 - 0.011s
+2018-05-08T17:43:50.133Z - info: Compiling...
+2018-05-08T17:43:50.729Z - info: Hash: [1mcdbae5b2297da02fc575[39m[22m
+Version: webpack [1m4.1.1[39m[22m
+Time: [1m370[39m[22mms
+Built at: 2018-5-9 [1m01:43:50[39m[22m
+                 [1mAsset[39m[22m       [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m       [1mChunk Names[39m[22m
+[1m[32mhot-update.96d73f.json[39m[22m   44 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+               [1m[32mmain.js[39m[22m     82 KiB    [1mmain[39m[22m  [1m[32m[emitted][39m[22m         main
+             [1m[33mvendor.js[39m[22m   [1m[33m3.94 MiB[39m[22m  [1mvendor[39m[22m  [1m[32m[39m[22m           [1m[33m[big][39m[22m  vendor
+[1m[32mhot-update.f46158.json[39m[22m   35 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+            [1m[32mindex.html[39m[22m  657 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m = [1m[32mvendor.js[39m[22m [1m[32mmain.js[39m[22m
+[./node_modules/airbnb-browser-shims/index.js] 103 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/babel-polyfill/lib/index.js] 833 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/querystring-es3/index.js] 127 bytes {[1m[33mvendor[39m[22m}
+[./src/client/App.jsx] 9.62 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+   [0] [1mmulti ./src/client/index.jsx webpack-hot-middleware/client?http://localhost:3000&reload=true&overlay=false[39m[22m 40 bytes {[1m[33mmain[39m[22m}
+[./node_modules/react-dom/index.js] 1.33 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/react/index.js] 190 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/sanitize.css/sanitize.css] 1.29 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/strip-ansi/index.js] 161 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/webpack-hot-middleware/client-overlay.js] [1m(webpack)-hot-middleware/client-overlay.js[39m[22m 2.16 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/webpack-hot-middleware/client.js?http://localhost:3000&reload=true&overlay=false] [1m(webpack)-hot-middleware/client.js?http://localhost:3000&reload=true&overlay=false[39m[22m 7.18 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/webpack-hot-middleware/process-update.js] [1m(webpack)-hot-middleware/process-update.js[39m[22m 4.23 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/webpack/buildin/module.js] [1m(webpack)/buildin/module.js[39m[22m 519 bytes {[1m[33mvendor[39m[22m}
+[./src/client/index.jsx] 323 bytes {[1m[33mmain[39m[22m}
+[./src/client/style.scss] 1.44 KiB {[1m[33mmain[39m[22m}
+    + 456 hidden modules
+Child [1mhtml-webpack-plugin for "index.html"[39m[22m:
+                     [1mAsset[39m[22m      [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m[1mChunk Names[39m[22m
+                [1m[32mindex.html[39m[22m    28 KiB       [1m0[39m[22m  [1m[32m[39m[22m           
+    [1m[32mhot-update.96d73f.json[39m[22m  44 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m  
+    Entrypoint [1mundefined[39m[22m = [1m[32mindex.html[39m[22m
+    [./node_modules/html-webpack-plugin/lib/loader.js!./src/client/index.html] 619 bytes {[1m[33m0[39m[22m}
+2018-05-08T17:43:50.729Z - info: Compiled successfully.
+2018-05-08T17:43:50.827Z - info: ::1 - GET /hot-update.f46158.json - 200 - 0s

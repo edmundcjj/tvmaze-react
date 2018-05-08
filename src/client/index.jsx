@@ -1,3 +1,5 @@
+/*eslint-disable*/
+
 import 'babel-polyfill';
 import 'airbnb-browser-shims';
 
