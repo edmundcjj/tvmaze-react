@@ -10,8 +10,8 @@ export const queryTVMazeAPI = (query, callback) => {
       }
 
       // Examine the text in the response
-      response.json().then(function(data) {
-        callback(data);
+      response.json().then(function(results) {
+        callback(results);
       });
     })
     .catch((err) => {
