@@ -27051,3 +27051,125 @@ Child [1mhtml-webpack-plugin for "index.html"[39m[22m:
 2018-05-09T16:04:40.023Z - info: ::1 - GET / - 304 - 5.626s
 2018-05-09T16:04:40.448Z - info: ::1 - GET /vendor.js - 304 - 0.014s
 2018-05-09T16:04:40.487Z - info: ::1 - GET /main.js - 200 - 0.002s
+2018-05-09T16:04:41.892Z - info: ::1 - GET /favicon.ico - 200 - 0.009s
+2018-05-09T16:04:45.515Z - info: ::1 - GET /favicon.ico - 304 - 0.002s
+2018-05-09T16:05:06.770Z - info: Compiling...
+2018-05-09T16:05:07.437Z - info: Hash: [1mde62500159240187f86c[39m[22m
+Version: webpack [1m4.1.1[39m[22m
+Time: [1m428[39m[22mms
+Built at: 2018-5-10 [1m00:05:07[39m[22m
+                 [1mAsset[39m[22m       [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m       [1mChunk Names[39m[22m
+[1m[32mhot-update.c4ed79.json[39m[22m   44 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+               [1m[32mmain.js[39m[22m   85.4 KiB    [1mmain[39m[22m  [1m[32m[emitted][39m[22m         main
+             [1m[33mvendor.js[39m[22m   [1m[33m4.34 MiB[39m[22m  [1mvendor[39m[22m  [1m[32m[39m[22m           [1m[33m[big][39m[22m  vendor
+[1m[32mhot-update.096968.json[39m[22m   35 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+            [1m[32mindex.html[39m[22m  657 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m = [1m[32mvendor.js[39m[22m [1m[32mmain.js[39m[22m
+[./node_modules/airbnb-browser-shims/index.js] 103 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/babel-polyfill/lib/index.js] 833 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/querystring-es3/index.js] 127 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/react-dom/index.js] 1.33 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/react-router-dom/es/index.js] 925 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/react/index.js] 190 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/sanitize.css/sanitize.css] 1.29 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/strip-ansi/index.js] 161 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/webpack-hot-middleware/client.js?http://localhost:3000&reload=true&overlay=false] [1m(webpack)-hot-middleware/client.js?http://localhost:3000&reload=true&overlay=false[39m[22m 7.18 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/webpack-hot-middleware/process-update.js] [1m(webpack)-hot-middleware/process-update.js[39m[22m 4.23 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/webpack/buildin/module.js] [1m(webpack)/buildin/module.js[39m[22m 519 bytes {[1m[33mvendor[39m[22m}
+[./src/client/App.jsx] 10.4 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[./src/client/index.jsx] 419 bytes {[1m[33mmain[39m[22m}
+[./src/client/style.scss] 1.44 KiB {[1m[33mmain[39m[22m}
+   [0] [1mmulti ./src/client/index.jsx webpack-hot-middleware/client?http://localhost:3000&reload=true&overlay=false[39m[22m 40 bytes {[1m[33mmain[39m[22m}
+    + 501 hidden modules
+Child [1mhtml-webpack-plugin for "index.html"[39m[22m:
+                     [1mAsset[39m[22m      [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m[1mChunk Names[39m[22m
+                [1m[32mindex.html[39m[22m    28 KiB       [1m1[39m[22m  [1m[32m[39m[22m           
+    [1m[32mhot-update.c4ed79.json[39m[22m  44 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m  
+    Entrypoint [1mundefined[39m[22m = [1m[32mindex.html[39m[22m
+    [./node_modules/html-webpack-plugin/lib/loader.js!./src/client/index.html] 619 bytes {[1m[33m1[39m[22m}
+2018-05-09T16:05:07.437Z - info: Compiled successfully.
+2018-05-09T16:05:07.447Z - info: ::1 - GET /hot-update.096968.json - 200 - 0.005s
+2018-05-09T16:06:16.332Z - info: Compiling...
+2018-05-09T16:06:17.114Z - info: Hash: [1mdcbeb6ce9681a3024c7d[39m[22m
+Version: webpack [1m4.1.1[39m[22m
+Time: [1m527[39m[22mms
+Built at: 2018-5-10 [1m00:06:17[39m[22m
+                 [1mAsset[39m[22m       [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m       [1mChunk Names[39m[22m
+[1m[32mhot-update.c64a9f.json[39m[22m   44 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+               [1m[32mmain.js[39m[22m   85.4 KiB    [1mmain[39m[22m  [1m[32m[emitted][39m[22m         main
+             [1m[33mvendor.js[39m[22m   [1m[33m4.34 MiB[39m[22m  [1mvendor[39m[22m  [1m[32m[39m[22m           [1m[33m[big][39m[22m  vendor
+  [1m[32mhot-update.de6250.js[39m[22m   23.2 KiB    [1mmain[39m[22m  [1m[32m[emitted][39m[22m         main
+[1m[32mhot-update.de6250.json[39m[22m   46 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+            [1m[32mindex.html[39m[22m  657 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m = [1m[32mvendor.js[39m[22m [1m[32mmain.js[39m[22m [1m[32mhot-update.de6250.js[39m[22m
+[./node_modules/airbnb-browser-shims/index.js] 103 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/babel-polyfill/lib/index.js] 833 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/querystring-es3/index.js] 127 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/react-dom/index.js] 1.33 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/react-router-dom/es/index.js] 925 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/react/index.js] 190 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/sanitize.css/sanitize.css] 1.29 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/strip-ansi/index.js] 161 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/webpack-hot-middleware/client.js?http://localhost:3000&reload=true&overlay=false] [1m(webpack)-hot-middleware/client.js?http://localhost:3000&reload=true&overlay=false[39m[22m 7.18 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/webpack-hot-middleware/process-update.js] [1m(webpack)-hot-middleware/process-update.js[39m[22m 4.23 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/webpack/buildin/module.js] [1m(webpack)/buildin/module.js[39m[22m 519 bytes {[1m[33mvendor[39m[22m}
+[./src/client/App.jsx] 10.4 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[./src/client/index.jsx] 419 bytes {[1m[33mmain[39m[22m}
+[./src/client/style.scss] 1.44 KiB {[1m[33mmain[39m[22m}
+   [0] [1mmulti ./src/client/index.jsx webpack-hot-middleware/client?http://localhost:3000&reload=true&overlay=false[39m[22m 40 bytes {[1m[33mmain[39m[22m}
+    + 501 hidden modules
+Child [1mhtml-webpack-plugin for "index.html"[39m[22m:
+                     [1mAsset[39m[22m      [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m[1mChunk Names[39m[22m
+                [1m[32mindex.html[39m[22m    28 KiB       [1m0[39m[22m  [1m[32m[39m[22m           
+    [1m[32mhot-update.c64a9f.json[39m[22m  44 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m  
+    Entrypoint [1mundefined[39m[22m = [1m[32mindex.html[39m[22m
+    [./node_modules/html-webpack-plugin/lib/loader.js!./src/client/index.html] 619 bytes {[1m[33m0[39m[22m}
+2018-05-09T16:06:17.114Z - info: Compiled successfully.
+2018-05-09T16:06:17.123Z - info: ::1 - GET /hot-update.de6250.json - 200 - 0.001s
+2018-05-09T16:06:17.130Z - info: ::1 - GET /hot-update.de6250.js - 200 - 0.001s
+2018-05-09T16:06:22.464Z - info: Compiling...
+2018-05-09T16:06:23.062Z - info: Hash: [1m51bdc885fbbd2ae2daad[39m[22m
+Version: webpack [1m4.1.1[39m[22m
+Time: [1m366[39m[22mms
+Built at: 2018-5-10 [1m00:06:23[39m[22m
+                 [1mAsset[39m[22m       [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m       [1mChunk Names[39m[22m
+[1m[32mhot-update.6bb5ae.json[39m[22m   44 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+               [1m[32mmain.js[39m[22m   85.5 KiB    [1mmain[39m[22m  [1m[32m[emitted][39m[22m         main
+             [1m[33mvendor.js[39m[22m   [1m[33m4.34 MiB[39m[22m  [1mvendor[39m[22m  [1m[32m[39m[22m           [1m[33m[big][39m[22m  vendor
+  [1m[32mhot-update.dcbeb6.js[39m[22m   23.2 KiB    [1mmain[39m[22m  [1m[32m[emitted][39m[22m         main
+[1m[32mhot-update.dcbeb6.json[39m[22m   46 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+            [1m[32mindex.html[39m[22m  657 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m = [1m[32mvendor.js[39m[22m [1m[32mmain.js[39m[22m [1m[32mhot-update.dcbeb6.js[39m[22m
+[./node_modules/airbnb-browser-shims/index.js] 103 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/babel-polyfill/lib/index.js] 833 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/querystring-es3/index.js] 127 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/react-dom/index.js] 1.33 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/react-router-dom/es/index.js] 925 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/react/index.js] 190 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/sanitize.css/sanitize.css] 1.29 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/strip-ansi/index.js] 161 bytes {[1m[33mvendor[39m[22m}
+[./node_modules/webpack-hot-middleware/client.js?http://localhost:3000&reload=true&overlay=false] [1m(webpack)-hot-middleware/client.js?http://localhost:3000&reload=true&overlay=false[39m[22m 7.18 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/webpack-hot-middleware/process-update.js] [1m(webpack)-hot-middleware/process-update.js[39m[22m 4.23 KiB {[1m[33mvendor[39m[22m}
+[./node_modules/webpack/buildin/module.js] [1m(webpack)/buildin/module.js[39m[22m 519 bytes {[1m[33mvendor[39m[22m}
+[./src/client/App.jsx] 10.4 KiB {[1m[33mmain[39m[22m}[1m[32m [built][39m[22m
+[./src/client/index.jsx] 419 bytes {[1m[33mmain[39m[22m}
+[./src/client/style.scss] 1.44 KiB {[1m[33mmain[39m[22m}
+   [0] [1mmulti ./src/client/index.jsx webpack-hot-middleware/client?http://localhost:3000&reload=true&overlay=false[39m[22m 40 bytes {[1m[33mmain[39m[22m}
+    + 501 hidden modules
+Child [1mhtml-webpack-plugin for "index.html"[39m[22m:
+                     [1mAsset[39m[22m      [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m[1mChunk Names[39m[22m
+                [1m[32mindex.html[39m[22m    28 KiB       [1m1[39m[22m  [1m[32m[39m[22m           
+    [1m[32mhot-update.6bb5ae.json[39m[22m  44 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m  
+    Entrypoint [1mundefined[39m[22m = [1m[32mindex.html[39m[22m
+    [./node_modules/html-webpack-plugin/lib/loader.js!./src/client/index.html] 619 bytes {[1m[33m1[39m[22m}
+2018-05-09T16:06:23.062Z - info: Compiled successfully.
+2018-05-09T16:06:23.067Z - info: ::1 - GET /hot-update.dcbeb6.json - 200 - 0s
+2018-05-09T16:06:23.073Z - info: ::1 - GET /hot-update.dcbeb6.js - 200 - 0s
+2018-05-09T16:06:30.195Z - info: ::1 - GET /form - 200 - 0.003s
+2018-05-09T16:06:30.230Z - info: ::1 - GET /vendor.js - 304 - 0.016s
+2018-05-09T16:06:30.233Z - info: ::1 - GET /main.js - 200 - 0.001s
+2018-05-09T16:06:30.892Z - info: ::1 - GET /favicon.ico - 200 - 0.001s
+2018-05-09T16:06:33.621Z - info: ::1 - GET /form - 304 - 0.002s
+2018-05-09T16:06:33.656Z - info: ::1 - GET /vendor.js - 304 - 0.014s
+2018-05-09T16:06:33.657Z - info: ::1 - GET /main.js - 304 - 0s
+2018-05-09T16:06:33.923Z - info: ::1 - GET /favicon.ico - 200 - 0.002s
