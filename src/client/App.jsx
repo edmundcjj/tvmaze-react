@@ -16,7 +16,7 @@ class Result_item extends React.Component {
   }
 
   render() {
-    return (<div>
+    return (<div className={styles.results}>
       <img src={this.props.show_image} alt="Show Image"></img>
       <h3>{this.props.name}</h3>
       <p>Language: {this.props.language}</p>
@@ -144,7 +144,7 @@ class Result_List extends React.Component {
     let ResultNode = this.state.queried_movie_list.length === 0
       ? null
       : this.state.queried_movie_list.map((result) => {
-        return <Result_item key={result.show.id} name={result.show.name} rating={result.show.rating.average} language={result.show.language} show_image={result.show.image.medium} show_url={result.show.url}></Result_item>
+        return <span><Result_item key={result.show.id} name={result.show.name} rating={result.show.rating.average} language={result.show.language} show_image={result.show.image.medium} show_url={result.show.url}></Result_item></span>
       });
 
     return (<div>
